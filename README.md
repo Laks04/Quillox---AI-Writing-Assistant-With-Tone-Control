@@ -1,6 +1,6 @@
 # ✍️ Quillox — AI Writing Assistant   
  
-> Powered by Groq · Built on LLaMA 3.3 · Zero API key exposure       [![Live Site](https://img.shields.io/badge/Live%20Site-cccccc?style=for-the-badge&logo=googlechrome)](https://quillox-ai-writing-assistant-with-tone.onrender.com/)
+> Powered by Groq · Built on LLaMA 3.3 · Zero API key exposure       [![Live Site](https://img.shields.io/badge/Live%20Site-cccccc?style=for-the-badge&logo=googlechrome)](https://quillox-ai-writing-assistant.onrender.com)
  
 Quillox is a fast, secure AI writing assistant that runs in your browser. It generates professional content — emails, LinkedIn posts, reports, summaries, and more — in any tone, for any audience, at any length. Your Groq API key is stored securely on the server and never exposed to the browser.
 

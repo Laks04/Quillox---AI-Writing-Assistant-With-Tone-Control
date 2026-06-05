@@ -5,7 +5,8 @@
 Quillox is a fast, secure AI writing assistant that runs in your browser. It generates professional content — emails, LinkedIn posts, reports, summaries, and more — in any tone, for any audience, at any length. Your Groq API key is stored securely on the server and never exposed to the browser.
 
 
- <img width="1132" height="868" alt="image" src="https://github.com/user-attachments/assets/0fadfc80-9509-43aa-98ec-985b97be8b02" />
+<img width="1148" height="862" alt="image" src="https://github.com/user-attachments/assets/fe6b41da-dbc0-4546-bf44-48f1353afca4" />
+
 
 ---
  

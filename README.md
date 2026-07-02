@@ -172,7 +172,9 @@ Browser → POST /api/generate (no key) → server.js → Groq API (key injected
  
 - The API key is loaded from `.env` (locally) or from the Render environment variable (in production) at server startup
 - The browser only ever calls `/api/generate` — the key never travels to the client
+- Rate limiting — 10 requests per minute per IP enforced on the backend; direct API calls via Postman or curl are also blocked
 - No key appears in browser DevTools, network logs, or page source
+- CORS restricted to allowed origin via ALLOWED_ORIGIN environment variable
 - `.gitignore` ensures `.env` is never accidentally pushed to GitHub
 - Server-side input validation rejects empty, oversized, or malformed requests before they reach Groq
 - Groq error messages are sanitised before being forwarded to the client; auth details are never leaked
@@ -180,7 +182,7 @@ Browser → POST /api/generate (no key) → server.js → Groq API (key injected
  
 ## Content Safety System
  
-Quillox has a multi-layer safety system built entirely client-side (no external moderation API needed):
+Quillox has a multi-layer safety system running server-side — no external moderation API needed:
  
 **Input screening** — before each request, the prompt is checked against a comprehensive set of regex rules covering:
  

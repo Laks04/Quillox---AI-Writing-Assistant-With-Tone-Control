@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quillox - Tone Assistant</title>
+  <title>AI Writing Assistant</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -128,7 +128,7 @@
 <div class="app-wrapper">
   <p class="app-title">
     <i class="ti ti-sparkles"></i>
-    Quillox - Tone Assistant
+    AI Writing Assistant
     <span class="groq-badge"></span>
     <span style="margin-left:auto;font-size:11px"></span>
   </p>
@@ -570,7 +570,7 @@ async function generate() {
     // Call our local proxy — API key stays on the server
     const res = await fetch('/api/generate', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json', 'x-client-token': 'quillox-secret-2024' },
       body: JSON.stringify({
         model: MODEL,
         max_tokens: MAX_TOKENS_OUT,
